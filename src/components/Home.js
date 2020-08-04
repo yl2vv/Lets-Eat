@@ -18,10 +18,10 @@ export function Home() {
             <h5>Randomly generate a place to eat!</h5>
             <div className="searchbar">
                 <Dropdowns search={search} />
-            </div>        
-            <footer>
-                Created by James Lim, 2020
-            </footer>
+            </div>  
+            <div className="bottomFoot">
+            <p>Created by James Lim, 2020</p> 
+            </div>   
         </div>
     );
 }

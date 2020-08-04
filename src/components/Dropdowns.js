@@ -18,7 +18,8 @@ export function Dropdowns(props) {
         <form onSubmit={submit}>
             <div className="items">
 
-                <p className="food">
+                <div className="food">
+                    <text className="directions">Select the type of food you want to eat</text>
                      <select className="foodDrop" id="food" onChange={(e) => setTerm(e.target.value)} value={term}>
                         <option value="food">any</option>
                         <option value="burgers">burgers</option>
@@ -27,16 +28,17 @@ export function Dropdowns(props) {
                         <option value="fast food">fast food</option>
                         
                     </select>
-                </p>
+                </div>
 
-                <p className="location">
+                <div className="location">
+                    <text className="directions">Where are you located?</text>
                     <input
                            onChange={(e) => setLocation(e.target.value)}
                            type="text"
                            className="locationType"
                            value={location}
                            placeholder="Where"/>
-                </p>
+                </div>
 
                 {/* <p className="control">
                     <select id="loc" onChange={(e) => setLocation(e.target.value)} value={location}>
