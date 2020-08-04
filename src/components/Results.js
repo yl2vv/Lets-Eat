@@ -1,10 +1,10 @@
 import React from 'react';
-import { SearchResults } from './SearchResults';
+import { SingleSearch } from './SingleSearch';
 import useReactRouter from 'use-react-router';
 import {YelpSearch} from '../hooks/api/yelpSearch';
 import { Link } from 'react-router-dom';
 
-export function Search() {
+export function Results() {
     const {location, history} = useReactRouter();
     const params = new URLSearchParams(location.search);
     const term = params.get('find_desc');
@@ -15,17 +15,11 @@ export function Search() {
         history.push('/');
     }
 
-    function search(term, location) {
-        const encodedTerm = encodeURI(term);
-        const encodedLocation = encodeURI(location);
-        history.push(`/search?find_desc=${encodedTerm}&find_loc=${encodedLocation}`);
-        performSearch({term, location});
-    }
-
     return (
         <div>
              <Link to ='/'>home</Link>
-            <SearchResults businesses={businesses}/>
+             <h1>How About You Try</h1>
+            <SingleSearch businesses={businesses}/>
         </div>
     );
 }

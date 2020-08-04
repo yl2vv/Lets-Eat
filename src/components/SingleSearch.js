@@ -1,7 +1,7 @@
 import React from 'react';
-import { SearchResult } from '../SearchResult';
+import { SearchResult } from './SearchResult';
 // import styles from './SearchResults.css';
-import {Spinner} from '../Spinner.js';
+import {Spinner} from './Spinner.js';
 
 export function SingleSearch(props) {
     let searchResults = <Spinner/>;
