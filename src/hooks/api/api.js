@@ -1,5 +1,3 @@
-//Figure out env variables
-
 import {API_BASE_URL, BEARER_TOKEN} from './config';
 import queryString from 'query-string'
 
