@@ -1,6 +1,6 @@
 import React from 'react';
 import { SearchResult } from './SearchResult';
-// import styles from './SearchResults.css';
+import styles from './SingleSearch.css';
 import {Spinner} from './Spinner.js';
 
 export function SingleSearch(props) {
@@ -18,19 +18,8 @@ export function SingleSearch(props) {
 
 
     return (
-        <div>
+        <div className="result">
             {searchResults}
-            {/* <div>
-            <img src={b.image_url} alt='business'/>
-            <div>
-                <h2>{b.name}</h2>
-                <p>{b.price}</p>
-            </div>
-            <div>
-                <p>{b.phone}</p>
-                <p>{b.location.display_address}</p>
-            </div>
-        </div> */}
         </div>
     );
 }

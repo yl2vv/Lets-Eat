@@ -3,6 +3,7 @@ import { SingleSearch } from './SingleSearch';
 import useReactRouter from 'use-react-router';
 import {YelpSearch} from '../hooks/api/yelpSearch';
 import { Link } from 'react-router-dom';
+import "./Results.css"
 
 export function Results() {
     const {location, history} = useReactRouter();
@@ -16,10 +17,13 @@ export function Results() {
     }
 
     return (
-        <div>
-             <Link to ='/'>home</Link>
+        <div className="screen">
+             <Link to ='/' className="home">Let's Eat!</Link>
              <h1>How About You Try</h1>
             <SingleSearch businesses={businesses}/>
+            <div className="bottomFoot">
+            <p>Created by James Lim, 2020</p> 
+            </div>   
         </div>
     );
 }

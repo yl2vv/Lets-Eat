@@ -1,0 +1,15 @@
+#root {
+    height: 100vh;
+  }
+
+.screen {
+    text-align: center;
+    background-color: #f19cbb;
+    width: 100%;
+    height: 100%; 
+}
+
+.home {
+  color: white;
+  font-size: 15px;
+}

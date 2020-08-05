@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Home.css"
-import { Dropdowns } from './Dropdowns';
+import { HomeFields } from './HomeFields';
 import useReactRouter from 'use-react-router';
 
 export function Home() {
@@ -17,7 +17,7 @@ export function Home() {
             <h1>Let's Eat!</h1>
             <h5>Randomly generate a place to eat!</h5>
             <div className="searchbar">
-                <Dropdowns search={search} />
+                <HomeFields search={search} />
             </div>  
             <div className="bottomFoot">
             <p>Created by James Lim, 2020</p> 
